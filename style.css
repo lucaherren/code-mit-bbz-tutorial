@@ -1,0 +1,82 @@
+body {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.inhalt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.playground {
+  position: relative;
+  width: 600px;
+  height: 350px;
+
+  margin-bottom: 20px;
+  /*
+  background-image: url(https://cdnb.artstation.com/p/assets/images/images/020/154/249/large/james-mornan-game-colours-2.jpg?1566589577);
+  background-size: contain;
+  */
+}
+
+.player {
+  width: 20px;
+  height: 20px;
+
+  position: absolute;
+  background-color: rgb(161, 161, 208);
+
+  transition: 0.2s;
+}
+
+.fullscreen {
+  padding: 15px 40px;
+  border-radius: 0;
+  background-color: rgb(199, 199, 205);
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 1.5px;
+  border: none;
+
+  transition: 0.2s;
+
+  cursor: grab;
+
+  display: none;
+}
+
+.fullscreen:hover {
+  background-color: rgb(121, 121, 171);
+  border-radius: 10px;
+
+  transition: 0.2s;
+}
+
+.platten {
+  position: absolute;
+  width: 70px;
+
+  height: 3px;
+  background-color: rgb(133, 133, 133);
+}
+
+.boden {
+  position: absolute;
+  width: 600px;
+
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+}
